@@ -66,6 +66,8 @@ function initializeApp() {
     displayLiffData();
     displayIsInClientInfo();
     registerButtonHandlers();
+    var dt = new Date();
+    document.getElementById("scheduled-time").value = dt.getHours() + ":" + dt.getMinutes();
 
     // check if the user is logged in/out, and disable inappropriate button
     if (liff.isLoggedIn()) {
