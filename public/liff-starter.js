@@ -68,6 +68,7 @@ function initializeApp() {
     registerButtonHandlers();
     var dt = new Date();
     document.getElementById("scheduled-time").value = dt.getHours() + ":" + dt.getMinutes();
+    alert(dt.getHours() + ":" + dt.getMinutes());
 }
 
 /**
