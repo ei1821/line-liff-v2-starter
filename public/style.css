@@ -50,10 +50,20 @@ button {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
 }
-#item1 {
+#item1 :active{
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
 }
 
-#item2 {
+
+#item2 :active{
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    box-sizing: border-box;
 }
 
 
