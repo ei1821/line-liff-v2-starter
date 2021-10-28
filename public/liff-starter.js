@@ -63,8 +63,8 @@ function initializeLiff(myLiffId) {
  * Initialize the app by calling functions handling individual app components
  */
 function initializeApp() {
-    displayLiffData();
-    displayIsInClientInfo();
+    //displayLiffData();
+    //displayIsInClientInfo();
     registerButtonHandlers();
     var dt = new Date();
     document.getElementById("scheduled-time").value = dt.getHours() + ":" + dt.getMinutes();
