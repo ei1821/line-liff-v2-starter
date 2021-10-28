@@ -3,22 +3,24 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LIFF Starter test</title>
+        <title>LIFF Starter</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="inputTime">
             <label for="scheduled-time">予定時刻を入力</label>
-            <div>
-                <input type="radio" id="busStaToSist" name="busDirection" value="busStaToSist" checked>
-                <label for="busStaToSist">駅から大学</label>
-            </div>
-            <div>
-                <input type="radio" id="busSistToSta" name="busDirection" value="busSistToSta">
-                <label for="busSistToSta">大学から駅</label>
-            </div>
+            <form id="busdirection">
+                <div>
+                    <input type="radio" id="busStaToSist" name="busDirection" value="駅から" checked>
+                    <label for="busStaToSist">駅から大学</label>
+                </div>
+                <div>
+                    <input type="radio" id="busSistToSta" name="busDirection" value="大学から">
+                    <label for="busSistToSta">大学から駅</label>
+                </div>
+            </form>
             <input type="time" name="scheduled_time" id="scheduled-time">
-            <button  type="submit">送信</button>
+            <button id="busTimeSelectButton"  type="submit">送信</button>
         </div>
         <div id="liffAppContent">
 

@@ -138,6 +138,28 @@ function registerButtonHandlers() {
         }
     });
 
+    document.getElementById("busTimeSelectButton").addEventListener("click", function() {
+        if (!liff.isInClient()) {
+            sendAlertIfNotInClient();
+        } else {
+            // form要素を取得
+            var element = document.getElementById( "busdirection" ) ;
+            // form要素内のラジオボタングループ(name="hoge")を取得
+            var radioNodeList = element.busDirection ;
+            // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
+            var direct = radioNodeList.value ;
+            var time = document.getElementById("scheduled-time").value;
+            liff.sendMessages([{
+                'type': 'text',
+                'text': time + "前後の" + direct + "のバス"
+            }]).then(function() {
+                window.alert('Message sent');
+            }).catch(function(error) {
+                window.alert('Error sending message: ' + error);
+            });
+        }
+    });
+
     // get access token
     document.getElementById('getAccessToken').addEventListener('click', function() {
         if (!liff.isLoggedIn() && !liff.isInClient()) {
