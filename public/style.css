@@ -56,12 +56,6 @@ button {
 #item2 {
 }
 
-#busTimeSelectButton {
-    grid-row: 3;
-    grid-column: 1 / 3;
-
-    font-size: 200%;
-}
 
 #scheduled-time {
     grid-row:2;
@@ -69,8 +63,16 @@ button {
 
     display: flex;
     text-align: center;
-    width: 80%;
+    width: auto;
     font-size: 20px;
+}
+
+#busTimeSelectButton {
+    grid-row: 3;
+    grid-column: 1 / 3;
+
+    font-size: 200%;
+    padding-top: 10px;
 }
 
 
