@@ -8,15 +8,15 @@
     </head>
     <body>
         <div class="inputTime">
-            <label for="scheduled-time">予定時刻を入力</label>
+            <label id="inputTimeLabel" for="scheduled-time">予定時刻を入力</label>
             <form id="busdirection">
                 <div id="item1">
                     <input type="radio" id="busStaToSist" name="busDirection" value="駅から" checked>
-                    <label for="busStaToSist">駅から大学</label>
+                    <label for="busStaToSist">駅　 → 大学</label>
                 </div>
                 <div id="item2">
                     <input type="radio" id="busSistToSta" name="busDirection" value="大学から">
-                    <label for="busSistToSta">大学から駅</label>
+                    <label for="busSistToSta">大学 → 　駅</label>
                 </div>
             </form>
             <input type="time" name="scheduled_time" id="scheduled-time" required>
