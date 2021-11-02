@@ -10,17 +10,17 @@
         <div class="inputTime">
             <label id="inputTimeLabel" for="scheduled-time"></label>
             <form id="busdirection">
-                <div id="item1">
+                <div class="bd-child" id="item1">
                     <input type="radio" id="busStaToSist" name="busDirection" value="駅から" checked>
                     <label for="busStaToSist">駅　 → 大学</label>
                 </div>
-                <div id="item2">
+                <div class="bd-child" id="item2">
                     <input type="radio" id="busSistToSta" name="busDirection" value="大学から">
                     <label for="busSistToSta">大学 → 　駅</label>
                 </div>
             </form>
             <input type="time" name="scheduled_time" id="scheduled-time" required>
-            <button id="busTimeSelectButton"  type="submit">送信</button>
+            <a class="btn btn--orange btn--cubic btn--shadow" id="busTimeSelectButton"  type="submit">送信</a>
         </div>
 
         <!-- LIFF ID ERROR -->
