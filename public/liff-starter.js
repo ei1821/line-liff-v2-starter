@@ -66,7 +66,7 @@ function initializeApp() {
     
     var dt = new Date();
     document.getElementById("scheduled-time").value = dt.getHours() + ":" + dt.getMinutes();
-    alert(document.getElementById("scheduled-time").value);
+    // alert(document.getElementById("scheduled-time").value);
     //displayLiffData();
     //displayIsInClientInfo();
     registerButtonHandlers();
