@@ -68,6 +68,9 @@ function initializeApp() {
     var minute = ("00" + dt.getMinutes()).slice(-2);
     var time = hour + ":" + minute;
     document.getElementById("scheduled-time").value = time;
+
+    alert(window.innerHeight());
+
 //    alert(dt.getHours() + ":" + dt.getMinutes());
     //displayLiffData();
     //displayIsInClientInfo();
