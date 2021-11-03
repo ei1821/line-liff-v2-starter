@@ -90,29 +90,27 @@ button {
     justify-content: center;
     align-items: center;
 
-    padding-top: 30px;
-
     margin: 20px;
     font-size: 200%;
 }
 
 a.btn--orange {
     color: #fff;
-    background-color: #eb6100;
-    border-bottom: 5px solid #b84c00;
+    background-color: #0061eb;
+    border-bottom: 5px solid #004cb8;
     border-radius: 2vh;
 
-  }
-  a.btn--orange:hover {
+}
+a.btn--orange:hover {
     margin-top: 3px;
     color: #fff;
-    background: #f56500;
-    border-bottom: 2px solid #b84c00;
-  }
-  a.btn--shadow {
+    background: #0065f5;
+    border-bottom: 2px solid #004cb8;
+}
+a.btn--shadow {
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-  }
+}
 
 /* 以下スルー */
 
