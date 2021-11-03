@@ -3,7 +3,7 @@ window.onload = function() {
     const defaultLiffId = "";   // change the default LIFF value if you are not using a node server
 
     
-    alert(window.innerHeight());
+    alert(innerHeight());
 
     // DO NOT CHANGE THIS
     let myLiffId = "";
