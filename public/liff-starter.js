@@ -63,10 +63,16 @@ function initializeLiff(myLiffId) {
  * Initialize the app by calling functions handling individual app components
  */
 function initializeApp() {
-    
+    var num = 1;
+var ret = ( '000' + num ).slice( -3 );
+console.log(ret);
+
     var dt = new Date();
-    document.getElementById("scheduled-time").value = dt.getHours() + ":" + dt.getMinutes();
-    // alert(document.getElementById("scheduled-time").value);
+    var hour = ("00" + dt.getHours()).slice(-2);
+    var minute = ("00" + dt.getMinutes()).slice(-2);
+    var time = hour + ":" + minute;
+    document.getElementById("scheduled-time").value = time;
+//    alert(dt.getHours() + ":" + dt.getMinutes());
     //displayLiffData();
     //displayIsInClientInfo();
     registerButtonHandlers();
