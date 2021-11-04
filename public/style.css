@@ -72,7 +72,7 @@ button {
     border-radius: 10px;
 }
 
-#busTimeSelectButton {
+#tentative-button {
     grid-row: 3;
     grid-column: 1 / 3;
 
@@ -82,6 +82,10 @@ button {
 
     margin: 20px;
     font-size: 200%;
+}
+
+#busTimeSelectButton {
+
 }
 
 a.btn--orange {

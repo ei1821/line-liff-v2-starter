@@ -65,13 +65,8 @@ function initializeLiff(myLiffId) {
  */
 function initializeApp() {
     var dt = new Date();
-    var hour = ("00" + dt.getHours()).slice(-2);
-    var minute = ("00" + dt.getMinutes()).slice(-2);
-    var time = hour + ":" + minute;
-    document.getElementById("scheduled-time").value = time;
-    alert(window.innerWidth + " : " +  document.getElementById("scheduled-time").clientWidth);
+    document.getElementById("scheduled-time").value = ("00" + dt.getHours()).slice(-2) + ":" + ("00" + dt.getMinutes()).slice(-2);
 
-    //alert(dt.getHours() + ":" + dt.getMinutes());
     //displayLiffData();
     //displayIsInClientInfo();
     registerButtonHandlers();
@@ -108,6 +103,10 @@ function displayIsInClientInfo() {
 * Register event handlers for the buttons displayed in the app
 */
 function registerButtonHandlers() {
+
+    document.getElementById("tentative-button").addEventListener("click", function() {
+        document.getElementById("busTimeSelectButton").click();
+    });
 
     document.getElementById("busTimeSelectButton").addEventListener("click", function() {
         if (!liff.isInClient()) {
