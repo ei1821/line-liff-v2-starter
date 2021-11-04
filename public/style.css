@@ -33,7 +33,7 @@ button {
 .inputTime{
     display: grid;
     grid-template-rows: 30px 100px 120px;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 #inputTimeLabel {
@@ -63,7 +63,7 @@ button {
     grid-column: 2;
     margin: 0 auto;
     text-align: center;
-    width: 50vw;
+    width: 40vw;
     font-size: 10vw;
 }
 
