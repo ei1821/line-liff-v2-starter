@@ -104,10 +104,6 @@ function displayIsInClientInfo() {
 */
 function registerButtonHandlers() {
 
-    document.getElementById("tentative-button").addEventListener("click", function() {
-        document.getElementById("busTimeSelectButton").click();
-    });
-
     document.getElementById("busTimeSelectButton").addEventListener("click", function() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
