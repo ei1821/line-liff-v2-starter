@@ -44,40 +44,26 @@ button {
     grid-row: 2 ;
     grid-column: 1;
 
-    font-size: 150%;
+    font-size: min(150%, 5vw);
 
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-}
-#item1 :active{
-    color: #6091d3;/*文字色*/
-    background: #FFF;
-    border: solid 3px #6091d3;/*線*/
-    border-radius: 10px;/*角の丸み*/
-}
-
-
-#item2 :active{
-    color: #6091d3;/*文字色*/
-    background: #FFF;
-    border: solid 3px #6091d3;/*線*/
-    border-radius: 10px;/*角の丸み*/
-    box-sizing: border-box;
 }
 
 .bd-child {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #scheduled-time {
     grid-row:2;
     grid-column: 2;
-    margin-left: 5vw;
+    margin: 0 auto;
     text-align: center;
-    width: auto;
+    width: 50vw;
     font-size: 10vw;
 }
 
@@ -109,6 +95,55 @@ a.btn--orange:hover {
 a.btn--shadow {
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+
+/* ラジオボタン03 */
+input[type=radio] {
+    display: none;
+}
+.radio03 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px;
+    position: relative;
+    width: auto;
+}
+.radio03::before {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 5px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+}
+.radio03::after {
+    background: #155de2;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 9px;
+    margin-top: -4px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: scale3d(.3,.3,1);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    width: 10px;
+}
+input[type=radio]:checked + .radio03::before {
+    border-color: #666;
+}
+input[type=radio]:checked + .radio03::after {
+    opacity: 1;
+    transform: scale3d(1,1,1);
 }
 
 /* 以下スルー */
