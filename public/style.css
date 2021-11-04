@@ -76,9 +76,6 @@ button {
 input[type="time"]::-webkit-calendar-picker-indicator {
     background: none;
 }
-input[type="time"]::-webkit-meter-bar {
-    background: none;
-}
 
 #busTimeSelectButton {
     grid-row: 3;
