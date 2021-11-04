@@ -45,7 +45,7 @@ button {
     grid-row: 2 ;
     grid-column: 1;
 
-    font-size: min(150%, 5vw);
+    font-size: min(150%, 4.7vw);
 
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -63,7 +63,7 @@ button {
     grid-row:2;
     grid-column: 2;
     margin: 0 auto;
-    text-align: center;
+    padding-left: 5vw;
     width: 40vw;
     font-size: 10vw;
     color: #0075f5;
